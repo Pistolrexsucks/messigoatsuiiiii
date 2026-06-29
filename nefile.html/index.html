@@ -1,260 +1,213 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vietnam Scenic Destinations</title>
+<title>Germany - History & Culture</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    font-family:'Segoe UI',sans-serif;
-    background:#f4f7fa;
+    background:#f4f4f4;
     color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(to right, black, red, gold);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-size:3rem;
 }
 
 nav{
-    background:white;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#0088cc;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:25px;
+    background:#222;
+    padding:15px;
+    text-align:center;
 }
 
 nav a{
+    color:white;
     text-decoration:none;
-    color:#333;
-    font-weight:600;
+    margin:20px;
+    font-weight:bold;
 }
 
 nav a:hover{
-    color:#0088cc;
+    color:gold;
 }
 
 .hero{
-    height:100vh;
-    background:url('1.jpg') center center/cover no-repeat;
+    background:url("https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=80") center/cover;
+    height:450px;
     display:flex;
     justify-content:center;
     align-items:center;
-    text-align:center;
-    position:relative;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.45);
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
     color:white;
+    text-shadow:2px 2px 8px black;
+}
+
+.hero h2{
+    font-size:3rem;
+    background:rgba(0,0,0,0.5);
     padding:20px;
+    border-radius:10px;
 }
 
-.hero-content h1{
-    font-size:64px;
-    margin-bottom:20px;
-}
-
-.hero-content p{
-    font-size:22px;
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
 }
 
 section{
-    padding:80px 10%;
+    margin-bottom:50px;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-    color:#0088cc;
-    font-size:38px;
+h2{
+    color:#b00000;
+    margin-bottom:15px;
 }
 
 .gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 .card{
     background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    display:block;
-}
-
-.card-content{
     padding:25px;
-}
-
-.card-content h3{
-    color:#0088cc;
-    margin-bottom:15px;
-}
-
-.card-content p{
-    line-height:1.7;
-}
-
-.facts{
-    background:white;
-    border-radius:20px;
-    padding:40px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
-}
-
-.facts ul{
-    padding-left:20px;
-}
-
-.facts li{
-    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
 }
 
 footer{
-    background:#1d1d1d;
+    background:#222;
     color:white;
     text-align:center;
-    padding:30px;
-}
-
-@media(max-width:768px){
-
-.hero-content h1{
-    font-size:40px;
-}
-
-.hero-content p{
-    font-size:18px;
-}
-
-nav{
-    flex-direction:column;
-    gap:15px;
-}
-
-nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-}
+    padding:20px;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<nav>
-<div class="logo">Vietnam Explorer</div>
+<header>
+<h1>🇩🇪 Germany</h1>
+<p>Discover Germany's History, Culture, and Famous Landmarks</p>
+</header>
 
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#destinations">Destinations</a></li>
-<li><a href="#facts">Facts</a></li>
-</ul>
+<nav>
+<a href="#about">About</a>
+<a href="#history">History</a>
+<a href="#gallery">Gallery</a>
 </nav>
 
-<section class="hero" id="home">
-<div class="hero-content">
-<h1>Discover Vietnam</h1>
-<p>Beautiful landscapes, mountains, beaches, and world-famous landmarks.</p>
+<div class="hero">
+<h2>Welcome to Germany</h2>
 </div>
+
+<div class="container">
+
+<section id="about" class="card">
+<h2>About Germany</h2>
+
+<p>
+Germany is located in Central Europe and is one of the world's leading
+countries in technology, engineering, science, and culture.
+Its capital city is Berlin, and it has a population of over 84 million people.
+Germany is famous for its beautiful castles, forests, historic cities,
+and annual Oktoberfest celebrations.
+</p>
+
 </section>
 
-<section id="destinations">
+<section id="history" class="card">
+<h2>History of Germany</h2>
 
-<h2 class="section-title">Featured Destinations</h2>
+<p>
+Germany has a long and fascinating history that dates back over 2,000 years.
+The region was originally home to Germanic tribes before becoming part of
+the Roman Empire's frontier.
+</p>
+
+<br>
+
+<p>
+In 1871, Germany became a unified nation under Chancellor Otto von Bismarck.
+During the 20th century, Germany played a major role in both World War I and
+World War II. After World War II, Germany was divided into East Germany and
+West Germany.
+</p>
+
+<br>
+
+<p>
+On October 3, 1990, Germany was reunified following the fall of the Berlin Wall,
+marking a new chapter in its history. Today, Germany is one of the strongest
+economies in Europe and a leader in innovation, education, and environmental
+sustainability.
+</p>
+
+</section>
+
+<section id="gallery">
+
+<h2>Famous Places in Germany</h2>
 
 <div class="gallery">
 
 <div class="card">
-<img src="1.jpg" alt="Golden Bridge">
-
-<div class="card-content">
-<h3>Golden Bridge – Da Nang</h3>
+<img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800&q=80" alt="Brandenburg Gate">
+<h3>Brandenburg Gate</h3>
 <p>
-One of Vietnam's most iconic attractions, located in Ba Na Hills.
-The bridge is famous for its giant stone hands appearing to lift
-the walkway above the mountains.
+One of Berlin's most famous landmarks and a symbol of German unity.
 </p>
-</div>
 </div>
 
 <div class="card">
-<img src="2.jpg" alt="Ha Long Bay">
-
-<div class="card-content">
-<h3>Ha Long Bay</h3>
+<img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=800&q=80" alt="Neuschwanstein Castle">
+<h3>Neuschwanstein Castle</h3>
 <p>
-A UNESCO World Heritage Site known for emerald waters,
-towering limestone islands, and traditional floating villages.
+A fairy-tale castle in Bavaria that inspired Disney's castle design.
 </p>
 </div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=80" alt="German Alps">
+<h3>The German Alps</h3>
+<p>
+Southern Germany is home to beautiful mountains perfect for hiking and skiing.
+</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="facts">
-
-<h2 class="section-title">Quick Facts</h2>
-
-<div class="facts">
-<ul>
-<li>🌉 Golden Bridge is located in Ba Na Hills, Da Nang.</li>
-<li>🏔 Ba Na Hills sits high in the mountains with stunning panoramic views.</li>
-<li>🚤 Ha Long Bay contains thousands of limestone islands and islets.</li>
-<li>🌏 Both destinations are among Vietnam's most visited tourist attractions.</li>
-<li>📸 They are popular locations for photography and sightseeing.</li>
-</ul>
 </div>
-
-</section>
 
 <footer>
-<p>© 2026 Vietnam Explorer • Travel & Discover</p>
+<p>© 2026 Germany Introduction Website | Created with HTML & CSS</p>
 </footer>
 
 </body>
 </html>
-```
-
