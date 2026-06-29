@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Germany - History & Culture</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(to right, black, red, gold);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+.hero{
+    background:url("https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=80") center/cover;
+    height:450px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-shadow:2px 2px 8px black;
+}
+
+.hero h2{
+    font-size:3rem;
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+    border-radius:10px;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+section{
+    margin-bottom:50px;
+}
+
+h2{
+    color:#b00000;
+    margin-bottom:15px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>🇩🇪 Germany</h1>
+<p>Discover Germany's History, Culture, and Famous Landmarks</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#history">History</a>
+<a href="#gallery">Gallery</a>
+</nav>
+
+<div class="hero">
+<h2>Welcome to Germany</h2>
+</div>
+
+<div class="container">
+
+<section id="about" class="card">
+<h2>About Germany</h2>
+
+<p>
+Germany is located in Central Europe and is one of the world's leading
+countries in technology, engineering, science, and culture.
+Its capital city is Berlin, and it has a population of over 84 million people.
+Germany is famous for its beautiful castles, forests, historic cities,
+and annual Oktoberfest celebrations.
+</p>
+
+</section>
+
+<section id="history" class="card">
+<h2>History of Germany</h2>
+
+<p>
+Germany has a long and fascinating history that dates back over 2,000 years.
+The region was originally home to Germanic tribes before becoming part of
+the Roman Empire's frontier.
+</p>
+
+<br>
+
+<p>
+In 1871, Germany became a unified nation under Chancellor Otto von Bismarck.
+During the 20th century, Germany played a major role in both World War I and
+World War II. After World War II, Germany was divided into East Germany and
+West Germany.
+</p>
+
+<br>
+
+<p>
+On October 3, 1990, Germany was reunified following the fall of the Berlin Wall,
+marking a new chapter in its history. Today, Germany is one of the strongest
+economies in Europe and a leader in innovation, education, and environmental
+sustainability.
+</p>
+
+</section>
+
+<section id="gallery">
+
+<h2>Famous Places in Germany</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800&q=80" alt="Brandenburg Gate">
+<h3>Brandenburg Gate</h3>
+<p>
+One of Berlin's most famous landmarks and a symbol of German unity.
+</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=800&q=80" alt="Neuschwanstein Castle">
+<h3>Neuschwanstein Castle</h3>
+<p>
+A fairy-tale castle in Bavaria that inspired Disney's castle design.
+</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=80" alt="German Alps">
+<h3>The German Alps</h3>
+<p>
+Southern Germany is home to beautiful mountains perfect for hiking and skiing.
+</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Germany Introduction Website | Created with HTML & CSS</p>
+</footer>
+
+</body>
+</html>
